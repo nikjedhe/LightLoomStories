@@ -167,6 +167,11 @@ section{padding:100px 0}
 .signature{font-family:'Sorts Mill Goudy',serif;font-style:italic;font-size:22px;margin-top:28px}
 
 /* ---------- portfolio ---------- */
+.collection{margin-bottom:72px}
+.collection:last-child{margin-bottom:0}
+.collection-head{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:28px;flex-wrap:wrap}
+.collection-head h3{font-size:26px}
+.collection-head span{font-family:'Sorts Mill Goudy',serif;font-style:italic;font-size:15px;color:var(--soft)}
 .folio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .folio-grid figure{position:relative;cursor:pointer}
 .folio-grid .ph{aspect-ratio:3/4;transition:transform .4s ease}
@@ -311,8 +316,7 @@ footer.site a:hover{color:var(--ink)}
 <!-- ════════ STORY ════════ -->
 <section class="story" id="story">
   <div class="wrap story-grid">
-    <!-- ▸ REPLACE: a photo of YOU, ideally with your daughters -->
-    <div class="ph story-photo reveal"><span class="ph-label">You + your girls</span></div>
+    <img src="images/story.jpg" alt="Nikhil and Chaitali smiling together under a large red holiday bow and evergreen wreath" class="story-photo reveal">
     <div class="reveal">
       <p class="eyebrow">Why I pick up the camera</p>
       <h2>I'm a dad of two daughters. <em>I know how fast it goes.</em></h2>
@@ -330,17 +334,37 @@ footer.site a:hover{color:var(--ink)}
     <div class="section-head reveal">
       <p class="eyebrow">Portfolio</p>
       <h2>Real families, <em>real light.</em></h2>
-      <p>A few favorite frames. Every session is different because every family is — these are simply moments that were already happening.</p>
+      <p>Three small collections — from the waiting, to the first weeks, to the years that fly. Every session is different because every family is.</p>
     </div>
-    <div class="folio-grid">
-      <figure class="reveal"><img src="images/folio-1.jpg" alt="Close-up portrait of a girl in a red floral beanie and fur-lined hood, eyes closed in the snow"><figcaption>Winter portraits <span class="num">i.</span></figcaption></figure>
-      <figure class="reveal"><img src="images/folio-2.jpg" alt="A girl laughing with a snowflake on her nose, holding fresh snow in her gloves"><figcaption>Snow-day joy <span class="num">ii.</span></figcaption></figure>
-      <figure class="reveal"><img src="images/folio-3.jpg" alt="Candid portrait of a girl with a white rose in her hair, laughing in golden light"><figcaption>Golden light <span class="num">iii.</span></figcaption></figure>
-      <figure class="reveal"><img src="images/folio-4.jpg" alt="A girl in a fur-lined hood catching snowflakes on her tongue, hands full of snow"><figcaption>Catching snowflakes <span class="num">iv.</span></figcaption></figure>
-      <!-- ▸ ADD MORE: uncomment a row below and point it at a new photo in images/
-      <figure class="reveal"><img src="images/folio-5.jpg" alt=""><figcaption>Celebrations <span class="num">v.</span></figcaption></figure>
-      <figure class="reveal"><img src="images/folio-6.jpg" alt=""><figcaption>The in-between <span class="num">vi.</span></figcaption></figure>
-      -->
+
+    <div class="collection">
+      <div class="collection-head reveal"><h3>Maternity</h3><span>the quiet before it all begins</span></div>
+      <div class="folio-grid">
+        <figure class="reveal"><img src="images/maternity-1.jpg" alt="Black and white profile portrait of an expectant mother cradling her belly"><figcaption>The waiting <span class="num">i.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/maternity-2.jpg" alt="A laughing big sister hugging her mother's pregnant belly, in black and white"><figcaption>Big sister <span class="num">ii.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/maternity-3.jpg" alt="A mother kissing her daughter's forehead during a black and white maternity session"><figcaption>Almost a family of four <span class="num">iii.</span></figcaption></figure>
+      </div>
+    </div>
+
+    <div class="collection">
+      <div class="collection-head reveal"><h3>Newborn days</h3><span>tiny, brand new, already changing</span></div>
+      <div class="folio-grid">
+        <figure class="reveal"><img src="images/newborn-1.jpg" alt="A mother nuzzling her wide-eyed newborn daughter wearing an orange headband"><figcaption>First weeks <span class="num">i.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/newborn-2.jpg" alt="A baby doing tummy time in a rust-colored bow headband, looking up at the camera"><figcaption>Hello, world <span class="num">ii.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/newborn-3.jpg" alt="A baby laughing during tummy time on a white blanket"><figcaption>First laughs <span class="num">iii.</span></figcaption></figure>
+      </div>
+    </div>
+
+    <div class="collection">
+      <div class="collection-head reveal"><h3>Little ones &amp; seasons</h3><span>the years that go by fastest</span></div>
+      <div class="folio-grid">
+        <figure class="reveal"><img src="images/folio-1.jpg" alt="Close-up portrait of a girl in a red floral beanie and fur-lined hood, eyes closed in the snow"><figcaption>Winter portraits <span class="num">i.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/folio-2.jpg" alt="A girl laughing with a snowflake on her nose, holding fresh snow in her gloves"><figcaption>Snow-day joy <span class="num">ii.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/folio-3.jpg" alt="Candid portrait of a girl with a white rose in her hair, laughing in golden light"><figcaption>Golden light <span class="num">iii.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/folio-4.jpg" alt="A girl in a fur-lined hood catching snowflakes on her tongue, hands full of snow"><figcaption>Catching snowflakes <span class="num">iv.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/folio-5.jpg" alt="A smiling girl balancing a small pumpkin on her head in a studio portrait"><figcaption>Pumpkin season <span class="num">v.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/folio-6.jpg" alt="Extreme close-up of a baby's big brown eyes under a rust bow headband"><figcaption>Those eyes <span class="num">vi.</span></figcaption></figure>
+      </div>
     </div>
   </div>
 </section>
