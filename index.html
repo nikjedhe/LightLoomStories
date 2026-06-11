@@ -7,6 +7,8 @@
 <meta name="description" content="Light-filled family portraits and event photography. Honest, unhurried sessions that catch your people exactly as they are — before time moves on.">
 <!-- ▸ EDIT ME: update the location below for local SEO -->
 <meta name="keywords" content="family photographer, event photography, family portraits, Newark Delaware photographer">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -94,6 +96,11 @@ header.scrolled{background:rgba(253,252,250,.94);backdrop-filter:blur(8px);box-s
 .thread-svg{position:absolute;top:0;right:-40px;height:100%;width:420px;pointer-events:none;opacity:.9}
 .thread-svg path{stroke:var(--thread);stroke-width:1.2;fill:none;stroke-dasharray:2200;stroke-dashoffset:2200;animation:weave 3.2s ease forwards .4s}
 @keyframes weave{to{stroke-dashoffset:0}}
+
+/* real photos */
+img.hero-photo,img.hero-mini,img.story-photo{width:100%;object-fit:cover;display:block}
+.folio-grid figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;transition:transform .4s ease}
+.folio-grid figure:hover img{transform:scale(.985)}
 
 /* photo placeholders — replace each .ph with <img> */
 .ph{
@@ -274,9 +281,8 @@ footer.site a:hover{color:var(--ink)}
       </div>
     </div>
     <div class="hero-side">
-      <!-- ▸ REPLACE: swap this div for <img src="images/hero.jpg" alt="..." class="hero-photo"> -->
-      <div class="ph hero-photo"><span class="ph-label">Your hero photo</span></div>
-      <div class="ph hero-mini"><span class="ph-label">Detail shot</span></div>
+      <img src="images/hero.jpg" alt="A young girl in a bright pink traditional dress smiling, sitting on the grass" class="hero-photo">
+      <img src="images/hero-mini.jpg" alt="A child in a pink winter coat walking through falling snow" class="hero-mini">
     </div>
   </div>
 </section>
@@ -292,8 +298,7 @@ footer.site a:hover{color:var(--ink)}
       <p>One day you're holding a newborn who fits along your forearm. Then you blink, and she's correcting your pronunciation and asking to borrow your headphones. Nobody warns you that "they grow up so fast" is not a cliché — it's a deadline.</p>
       <p>That's why I photograph families. Not the stiff, everyone-say-cheese kind of photos — the real ones. The way your toddler laughs with her whole body. The way grandpa watches the birthday candles. The way you look at your people when you think no one's watching.</p>
       <p class="pull">Time flies. Let me help you keep the good parts.</p>
-      <!-- ▸ EDIT ME: replace with your name -->
-      <p class="signature">— Your Name, Lightloom Stories</p>
+      <p class="signature">— Nikhil, Lightloom Stories</p>
     </div>
   </div>
 </section>
@@ -307,13 +312,14 @@ footer.site a:hover{color:var(--ink)}
       <p>A few favorite frames. Every session is different because every family is — these are simply moments that were already happening.</p>
     </div>
     <div class="folio-grid">
-      <!-- ▸ REPLACE each placeholder div with: <img src="images/folio-1.jpg" alt="describe the photo"> -->
-      <figure class="reveal"><div class="ph"><span class="ph-label">Photo 01</span></div><figcaption>Family portraits <span class="num">i.</span></figcaption></figure>
-      <figure class="reveal"><div class="ph"><span class="ph-label">Photo 02</span></div><figcaption>Golden hour <span class="num">ii.</span></figcaption></figure>
-      <figure class="reveal"><div class="ph"><span class="ph-label">Photo 03</span></div><figcaption>Little ones <span class="num">iii.</span></figcaption></figure>
-      <figure class="reveal"><div class="ph"><span class="ph-label">Photo 04</span></div><figcaption>Celebrations <span class="num">iv.</span></figcaption></figure>
-      <figure class="reveal"><div class="ph"><span class="ph-label">Photo 05</span></div><figcaption>Events <span class="num">v.</span></figcaption></figure>
-      <figure class="reveal"><div class="ph"><span class="ph-label">Photo 06</span></div><figcaption>The in-between <span class="num">vi.</span></figcaption></figure>
+      <figure class="reveal"><img src="images/folio-1.jpg" alt="Close-up portrait of a girl in a red floral beanie and fur-lined hood, eyes closed in the snow"><figcaption>Winter portraits <span class="num">i.</span></figcaption></figure>
+      <figure class="reveal"><img src="images/folio-2.jpg" alt="A girl laughing with a snowflake on her nose, holding fresh snow in her gloves"><figcaption>Snow-day joy <span class="num">ii.</span></figcaption></figure>
+      <figure class="reveal"><img src="images/folio-3.jpg" alt="Candid portrait of a girl with a white rose in her hair, laughing in golden light"><figcaption>Golden light <span class="num">iii.</span></figcaption></figure>
+      <figure class="reveal"><img src="images/folio-4.jpg" alt="A girl in a fur-lined hood catching snowflakes on her tongue, hands full of snow"><figcaption>Catching snowflakes <span class="num">iv.</span></figcaption></figure>
+      <!-- ▸ ADD MORE: uncomment a row below and point it at a new photo in images/
+      <figure class="reveal"><img src="images/folio-5.jpg" alt=""><figcaption>Celebrations <span class="num">v.</span></figcaption></figure>
+      <figure class="reveal"><img src="images/folio-6.jpg" alt=""><figcaption>The in-between <span class="num">vi.</span></figcaption></figure>
+      -->
     </div>
   </div>
 </section>
@@ -378,7 +384,6 @@ footer.site a:hover{color:var(--ink)}
         </ol>
       </div>
       <div class="gallery-cta">
-        <!-- ▸ EDIT ME: replace with your real Pixieset URL -->
         <a class="btn" href="https://lightloomstories.pixieset.com" target="_blank" rel="noopener">Open client galleries</a>
         <small>Lost your gallery link or PIN? Just message me.</small>
       </div>
@@ -431,8 +436,7 @@ footer.site a:hover{color:var(--ink)}
     <h2>Let's make something <em>worth keeping.</em></h2>
     <p>The easiest way to reach me is Instagram — send a DM and tell me about your family. I'll reply personally, usually within a day.</p>
     <div class="contact-actions">
-      <!-- ▸ EDIT ME: replace with your real Instagram URL -->
-      <a class="btn btn-solid" href="https://instagram.com/lightloomstories" target="_blank" rel="noopener">Message me on Instagram</a>
+      <a class="btn btn-solid" href="https://www.instagram.com/lightloomstories" target="_blank" rel="noopener">Message me on Instagram</a>
     </div>
     <!-- ▸ EDIT ME: replace with your real email -->
     <p class="alt">Prefer email? <a href="mailto:hello@lightloomstories.com">hello@lightloomstories.com</a></p>
