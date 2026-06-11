@@ -79,11 +79,11 @@ header{
   transition:background .4s,box-shadow .4s;
 }
 header.scrolled{background:rgba(253,252,250,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:56px;padding:22px 6vw;max-width:var(--max);margin:0 auto}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:22px 6vw;max-width:var(--max);margin:0 auto}
 .wordmark{font-family:'Sorts Mill Goudy',serif;font-size:22px;text-decoration:none;letter-spacing:.02em;white-space:nowrap}
 .wordmark span{color:var(--thread-deep);font-style:italic}
-.nav-links{display:flex;gap:34px;list-style:none;align-items:center}
-.nav-links a{text-decoration:none;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--soft);transition:color .25s}
+.nav-links{display:flex;gap:26px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;white-space:nowrap;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--soft);transition:color .25s}
 .nav-links a:hover,.nav-links a:focus-visible{color:var(--ink)}
 .nav-links a.cta{
   color:var(--ink);border:1px solid var(--thread);padding:9px 20px;border-radius:99px;
@@ -252,7 +252,7 @@ footer.site a{text-decoration:none}
 footer.site a:hover{color:var(--ink)}
 
 /* ---------- responsive ---------- */
-@media (max-width:920px){
+@media (max-width:1080px){
   .hero-grid,.story-grid,.gallery-band{grid-template-columns:1fr}
   .hero{padding:130px 0 70px}
   .hero-mini{left:auto;right:-10px;bottom:-26px}
