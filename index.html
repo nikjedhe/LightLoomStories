@@ -79,8 +79,8 @@ header{
   transition:background .4s,box-shadow .4s;
 }
 header.scrolled{background:rgba(253,252,250,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 6vw;max-width:var(--max);margin:0 auto}
-.wordmark{font-family:'Sorts Mill Goudy',serif;font-size:22px;text-decoration:none;letter-spacing:.02em}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:56px;padding:22px 6vw;max-width:var(--max);margin:0 auto}
+.wordmark{font-family:'Sorts Mill Goudy',serif;font-size:22px;text-decoration:none;letter-spacing:.02em;white-space:nowrap}
 .wordmark span{color:var(--thread-deep);font-style:italic}
 .nav-links{display:flex;gap:34px;list-style:none;align-items:center}
 .nav-links a{text-decoration:none;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--soft);transition:color .25s}
@@ -173,6 +173,7 @@ section{padding:100px 0}
 .collection-head h3{font-size:26px}
 .collection-head span{font-family:'Sorts Mill Goudy',serif;font-style:italic;font-size:15px;color:var(--soft)}
 .folio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.folio-grid.cols-4{grid-template-columns:repeat(4,1fr)}
 .folio-grid figure{position:relative;cursor:pointer}
 .folio-grid .ph{aspect-ratio:3/4;transition:transform .4s ease}
 .folio-grid figure:nth-child(2) .ph,
@@ -255,7 +256,7 @@ footer.site a:hover{color:var(--ink)}
   .hero-grid,.story-grid,.gallery-band{grid-template-columns:1fr}
   .hero{padding:130px 0 70px}
   .hero-mini{left:auto;right:-10px;bottom:-26px}
-  .folio-grid{grid-template-columns:repeat(2,1fr)}
+  .folio-grid,.folio-grid.cols-4{grid-template-columns:repeat(2,1fr)}
   .steps,.journal-grid,.quotes{grid-template-columns:1fr}
   .thread-svg{display:none}
   .nav-links{
@@ -267,7 +268,7 @@ footer.site a:hover{color:var(--ink)}
   .burger{display:block;position:relative;z-index:60}
 }
 @media (max-width:560px){
-  .folio-grid{grid-template-columns:1fr}
+  .folio-grid,.folio-grid.cols-4{grid-template-columns:1fr}
   section{padding:74px 0}
 }
 </style>
@@ -348,10 +349,11 @@ footer.site a:hover{color:var(--ink)}
 
     <div class="collection">
       <div class="collection-head reveal"><h3>Newborn days</h3><span>tiny, brand new, already changing</span></div>
-      <div class="folio-grid">
-        <figure class="reveal"><img src="images/newborn-1.jpg" alt="A mother nuzzling her wide-eyed newborn daughter wearing an orange headband"><figcaption>First weeks <span class="num">i.</span></figcaption></figure>
-        <figure class="reveal"><img src="images/newborn-2.jpg" alt="A baby doing tummy time in a rust-colored bow headband, looking up at the camera"><figcaption>Hello, world <span class="num">ii.</span></figcaption></figure>
-        <figure class="reveal"><img src="images/newborn-3.jpg" alt="A baby laughing during tummy time on a white blanket"><figcaption>First laughs <span class="num">iii.</span></figcaption></figure>
+      <div class="folio-grid cols-4">
+        <figure class="reveal"><img src="images/newborn-4.jpg" alt="A mother holding her baby skin to skin, both smiling softly"><figcaption>Skin to skin <span class="num">i.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/newborn-1.jpg" alt="A mother nuzzling her wide-eyed newborn daughter wearing an orange headband"><figcaption>First weeks <span class="num">ii.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/newborn-2.jpg" alt="A baby doing tummy time in a rust-colored bow headband, looking up at the camera"><figcaption>Hello, world <span class="num">iii.</span></figcaption></figure>
+        <figure class="reveal"><img src="images/newborn-3.jpg" alt="A baby laughing during tummy time on a white blanket"><figcaption>First laughs <span class="num">iv.</span></figcaption></figure>
       </div>
     </div>
 
@@ -374,16 +376,17 @@ footer.site a:hover{color:var(--ink)}
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">How it works</p>
-      <h2>Simple, relaxed, <em>kid-approved.</em></h2>
+      <h2>Simple, relaxed, <em>zero awkwardness.</em></h2>
+      <p>Maternity, newborn, family portraits, senior photos, prom send-offs, graduations, birthdays — the occasion changes, the experience doesn't.</p>
     </div>
     <div class="steps">
       <div class="step reveal">
         <h3>Say hello</h3>
-        <p>Send me a message on Instagram or email. Tell me about your family, the occasion, or just that "the kids are growing too fast." I get it.</p>
+        <p>Message me on Instagram or email. Tell me what's coming — a baby, a graduation, a milestone birthday, or just a family that keeps growing up too fast. We'll find a date.</p>
       </div>
       <div class="step reveal">
         <h3>The session</h3>
-        <p>We pick a spot and a time with good light. No stiff posing — we play, we wander, we let the kids be kids. The best photos happen when everyone forgets the camera is there.</p>
+        <p>We pick a spot and a time with beautiful light — your home, a favorite park, or a studio backdrop. No stiff posing: seniors get to look cool, kids get to be kids, and parents get to exhale. The best frames happen when everyone forgets the camera is there.</p>
       </div>
       <div class="step reveal">
         <h3>Your gallery</h3>
@@ -394,6 +397,10 @@ footer.site a:hover{color:var(--ink)}
 </section>
 
 <!-- ════════ KIND WORDS ════════ -->
+<!-- ▸ KIND WORDS: hidden until real client reviews arrive.
+     When your first review lands: paste it over the placeholder text below,
+     put the client's first name in the footer, then delete this opening
+     comment line and the closing comment line after </section>.
 <section class="kind">
   <div class="wrap">
     <div class="section-head reveal">
@@ -401,18 +408,18 @@ footer.site a:hover{color:var(--ink)}
       <h2>What families <em>say.</em></h2>
     </div>
     <div class="quotes">
-      <!-- ▸ EDIT ME: replace with real testimonials as they come in -->
       <blockquote class="quote reveal">
-        <p>"He somehow caught our three-year-old mid-laugh — the exact laugh we hear at home. I cried when I opened the gallery."</p>
-        <footer>— A happy parent (your testimonial here)</footer>
+        <p>"PASTE REAL REVIEW HERE"</p>
+        <footer>— Client first name, session type</footer>
       </blockquote>
       <blockquote class="quote reveal">
-        <p>"It didn't feel like a photoshoot at all. It felt like a walk in the park with a friend who happened to have a camera."</p>
-        <footer>— A happy family (your testimonial here)</footer>
+        <p>"PASTE REAL REVIEW HERE"</p>
+        <footer>— Client first name, session type</footer>
       </blockquote>
     </div>
   </div>
 </section>
+-->
 
 <!-- ════════ CLIENT GALLERIES ════════ -->
 <section id="galleries">
